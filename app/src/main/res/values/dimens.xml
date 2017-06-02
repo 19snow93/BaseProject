@@ -1,0 +1,148 @@
+<resources>
+    <!-- 默认的Activity内容物间距 -->
+    <dimen name="activity_horizontal_margin">13dp</dimen>
+    <dimen name="activity_vertical_margin">13dp</dimen>
+    <dimen name="default_margin_top">13dp</dimen>
+
+    <!-- 顶部分割线左右间距 -->
+    <dimen name="divider_horizontal_margin">-12dp</dimen>
+
+    <dimen name="default_content_margin">8dp</dimen>
+
+    <!-- 通用头像图片 -->
+    <dimen name="default_avatar_size">45dp</dimen>
+    <dimen name="avatar_size">64dp</dimen>
+    <dimen name="large_avatar_size">96dp</dimen>
+
+    <!-- 通用图片大小 -->
+    <dimen name="default_image_size">48dp</dimen>
+
+
+    <!-- 标题栏 -->
+    <dimen name="toolbar_height">48dp</dimen>
+    <dimen name="toolbar_text_padding">10dp</dimen> <!-- 标题间距 -->
+    <dimen name="toolbar_content_margin">6dp</dimen> <!-- 标题栏的内容物间距 -->
+    <dimen name="toolbar_title_image_width">120dp</dimen>
+
+    <!-- 新建密码 -->
+    <dimen name="buildpwd_text_height">40dip</dimen>
+
+    <!-- 底部栏图标 -->
+    <dimen name="bottom_bar_icon_width">48dp</dimen>
+
+    <!-- 文字大小 -->
+    <dimen name="text_size_tab_title">16sp</dimen>
+    <dimen name="text_size_title">16sp</dimen>
+
+    <!-- 通用文字 -->
+    <dimen name="text_size_tab_bottom">11sp</dimen>
+
+    <dimen name="text_size_tip"> 11sp </dimen>
+    <dimen name="text_size_tip_12">12sp</dimen>
+    <dimen name="text_size_hint">13sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen> <!-- 常规 -->
+    <dimen name="text_size_normal_15">15sp</dimen>
+    <dimen name="text_size_important">16sp</dimen> <!-- 重要 -->
+    <dimen name="text_size_more_important">18sp</dimen>
+    <dimen name="text_size_most_important">20sp</dimen>
+    <dimen name="text_size_large">29sp</dimen>
+
+    <!-- 可以在代码中获取到这些值，而不用在不同的单位间转来转去 -->
+    <dimen name="sp_11">11sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_24">24sp</dimen>
+    <dimen name="sp_30">30sp</dimen>
+
+    <dimen name="dp_m_207">-207dp</dimen>
+    <dimen name="dp_m_170">-170dp</dimen>
+    <dimen name="dp_m_157">-157dp</dimen>
+    <dimen name="dp_m_153">-153dp</dimen>
+    <dimen name="dp_m_72">-72dp</dimen>
+    <dimen name="dp_m_19">-19dp</dimen>
+    <dimen name="dp_m_14">-14dp</dimen>
+    <dimen name="dp_m_10">-10dp</dimen>
+    <dimen name="dp_m_9">-9dp</dimen>
+    <dimen name="dp_m_6">-6dp</dimen>
+    <dimen name="dp_m_4">-4dp</dimen>
+    <dimen name="dp_0">0dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_7">7dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_11">11dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_13">13dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_17">17dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+    <dimen name="dp_28">28dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_31">31dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_33">33dp</dimen>
+    <dimen name="dp_34">34dp</dimen>
+    <dimen name="dp_35">35dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_44">44dp</dimen>
+    <dimen name="dp_45">45dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_51">51dp</dimen>
+    <dimen name="dp_52">52dp</dimen>
+    <dimen name="dp_54">54dp</dimen>
+    <dimen name="dp_56">56dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_64">64dp</dimen>
+    <dimen name="dp_70">70dp</dimen>
+    <dimen name="dp_72">72dp</dimen>
+    <dimen name="dp_73">73dp</dimen>
+    <dimen name="dp_78">78dp</dimen>
+    <dimen name="dp_75">75dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_83">83dp</dimen>
+    <dimen name="dp_87">87dp</dimen>
+    <dimen name="dp_90">90dp</dimen>
+    <dimen name="dp_98">98dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dp_102">102dp</dimen>
+    <dimen name="dp_122">122dp</dimen>
+    <dimen name="dp_110">110dp</dimen>
+    <dimen name="dp_111">111dp</dimen>
+    <dimen name="dp_130">130dp</dimen>
+    <dimen name="dp_134">134dp</dimen>
+    <dimen name="dp_160">160dp</dimen>
+    <dimen name="dp_175">175dp</dimen>
+    <dimen name="dp_176">176dp</dimen>
+    <dimen name="dp_184">184dp</dimen>
+    <dimen name="dp_200">200dp</dimen>
+    <dimen name="dp_222">222dp</dimen>
+    <dimen name="dp_240">240dp</dimen>
+    <dimen name="dp_270">270dp</dimen>
+    <dimen name="dp_278">278dp</dimen>
+    <dimen name="dp_300">300dp</dimen>
+    <dimen name="dp_333">333dp</dimen>
+    <dimen name="dp_465">465dp</dimen>
+    <dimen name="dp_480">480dp</dimen>
+    <dimen name="dp_490">490dp</dimen>
+    <dimen name="dp_505">505dp</dimen>
+    <dimen name="dp_515">515dp</dimen>
+    <dimen name="dp_530">530dp</dimen>
+    <dimen name="dp_555">555dp</dimen>
+    <dimen name="dp_560">560dp</dimen>
+
+    <dimen name="icon_size_little">28dp</dimen>
+
+    <dimen name="min_name_width">64dp</dimen>
+</resources>

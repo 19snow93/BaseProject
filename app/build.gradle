@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        multiDexEnabled true
+        renderscriptTargetApi 23
+        renderscriptSupportModeEnabled true
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+//            shrinkResources true
+//            zipAlignEnabled true
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    //base
+    compile rootProject.ext.dependencies["appcompat-v7"]
+    compile rootProject.ext.dependencies["design"]
+    compile rootProject.ext.dependencies["recyclerview-v7"]
+    compile rootProject.ext.dependencies["cardview-v7"]
+
+    //ui
+
+    //rx
+    compile rootProject.ext.dependencies["rxjava"]
+    compile rootProject.ext.dependencies["rxandroid"]
+
+    //network
+    compile rootProject.ext.dependencies["gson"]
+    compile rootProject.ext.dependencies["retrofit"]
+    compile rootProject.ext.dependencies["retrofit-converter-gson"]
+    compile rootProject.ext.dependencies["adapter-rxjava"]
+    compile rootProject.ext.dependencies["okhttp"]
+    compile rootProject.ext.dependencies["okhttp-logging-interceptor"]
+    compile rootProject.ext.dependencies["glide"]
+    compile rootProject.ext.dependencies["glide-okhttp3-integration"]
+
+    //di
+    compile rootProject.ext.dependencies["dagger"]
+    compile rootProject.ext.dependencies["dagger-compiler"]
+    compile rootProject.ext.dependencies["butterknife"]
+    apt rootProject.ext.dependencies["butterknife-compiler"]
+    provided rootProject.ext.dependencies["annotation"]
+
+    //canary
+    debugCompile rootProject.ext.dependencies["blockcanary-android"]
+    releaseCompile rootProject.ext.dependencies["blockcanary-no-op"]
+    debugCompile rootProject.ext.dependencies["leakcanary-android"]
+    releaseCompile rootProject.ext.dependencies["leakcanary-android-no-op"]
+}

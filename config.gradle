@@ -1,0 +1,60 @@
+ext {
+
+    android = [
+            compileSdkVersion : 25,
+            buildToolsVersion : '25.0.2',
+            applicationId     : "com.cpgc.baseproject",
+            minSdkVersion     : 14,
+            targetSdkVersion  : 25,
+            versionCode       : 1,
+            versionName       : "1.0"
+    ]
+
+    def dependVersion = [
+            support     : "25.1.0",
+            retrofit    : "2.2.0",
+            okhttp      : "3.6.0",
+            dagger2     : "2.0.2",
+            butterknife : "8.2.1",
+            blockcanary : "1.2.1",
+            leakcanary  : "1.4-beta2",
+            rxjava :  "1.1.6",
+            rxandroid: "1.2.1",
+            gson: "2.7"
+    ]
+
+    dependencies = [
+            //base
+            "appcompat-v7"              : "com.android.support:appcompat-v7:${dependVersion.support}",
+            "cardview-v7"               : "com.android.support:cardview-v7:${dependVersion.support}",
+            "recyclerview-v7"           : "com.android.support:recyclerview-v7:${dependVersion.support}",
+            "design"                    : "com.android.support:design:${dependVersion.support}",
+
+            //rx
+            "rxjava"                    : "io.reactivex:rxjava:${dependVersion.rxjava}",
+            "rxandroid"                 : "io.reactivex:rxandroid:${dependVersion.rxandroid}",
+
+            //network
+            "gson"                      : "com.google.code.gson:gson:${dependVersion.gson}",
+            "retrofit"                  : "com.squareup.retrofit2:retrofit:${dependVersion.retrofit}",
+            "retrofit-converter-gson"   : "com.squareup.retrofit2:converter-gson:${dependVersion.retrofit}",
+            "adapter-rxjava"           : "com.squareup.retrofit2:adapter-rxjava:${dependVersion.retrofit}",
+            "okhttp"                    : "com.squareup.okhttp3:okhttp:${dependVersion.okhttp}",
+            "okhttp-logging-interceptor": "com.squareup.okhttp3:logging-interceptor:${dependVersion.okhttp}",
+            "glide"                     : "com.github.bumptech.glide:glide:3.7.0",
+            "glide-okhttp3-integration" : "com.github.bumptech.glide:okhttp3-integration:1.4.0@aar",
+
+            //di
+            "dagger"                    : "com.google.dagger:dagger:${dependVersion.dagger2}",
+            "dagger-compiler"           : "com.google.dagger:dagger-compiler:${dependVersion.dagger2}",
+            "butterknife"               : "com.jakewharton:butterknife:${dependVersion.butterknife}",
+            "butterknife-compiler"      : "com.jakewharton:butterknife-compiler:${dependVersion.butterknife}",
+            "annotation"                : "org.glassfish:javax.annotation:10.0-b28",
+
+            //canary
+            "blockcanary-android"       : "com.github.moduth:blockcanary-android:${dependVersion.blockcanary}",
+            "blockcanary-no-op"         : "com.github.moduth:blockcanary-no-op:${dependVersion.blockcanary}",
+            "leakcanary-android"        : "com.squareup.leakcanary:leakcanary-android:${dependVersion.leakcanary}",
+            "leakcanary-android-no-op"  : "com.squareup.leakcanary:leakcanary-android-no-op:${dependVersion.leakcanary}"
+    ]
+}
