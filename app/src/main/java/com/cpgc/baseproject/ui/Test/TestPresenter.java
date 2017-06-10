@@ -25,13 +25,11 @@ public class TestPresenter extends RxPresenter<TestContract.View> implements Tes
     @Override
     public void testWX(String url, Map<String, Object> maps) {
         retrofitHelper.Get(url, maps, new BaseSubscriber<List<WXItemBean>>() {
-
             @Override
             public void onNextT(List<WXItemBean> task) {
                 mView.testSuccess(task);
 
             }
-
             @Override
             public void onErrorT(String msg) {
                 Log.e("_onError",msg);

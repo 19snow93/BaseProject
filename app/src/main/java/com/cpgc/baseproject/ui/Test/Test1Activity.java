@@ -63,8 +63,10 @@ public class Test1Activity extends MVPActivity<Test1Presenter> implements Test1C
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         weChatAdapter = new WeChatAdapter(R.layout.item_wechat,this,wxItemBeanList);
         recyclerView.setAdapter(weChatAdapter);
+        //设置头部
         View headerView = LayoutInflater.from(this).inflate(R.layout.view_header,null);
         weChatAdapter.setHeaderView(headerView);
+        //设置尾部
         View footerView = LayoutInflater.from(this).inflate(R.layout.view_footer,null);
         weChatAdapter.setFooterView(footerView);
 

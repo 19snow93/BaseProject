@@ -25,7 +25,6 @@ public class WeChatAdapter extends BaseAdapter<WXItemBean,BaseViewHolder> {
     protected void convert(BaseViewHolder viewHolder, int position, WXItemBean item) {
         viewHolder.setText(R.id.tv_title,item.getTitle());
         viewHolder.setText(R.id.tv_description,item.getDescription());
-
     }
 
 }
